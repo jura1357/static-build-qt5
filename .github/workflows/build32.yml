@@ -41,7 +41,7 @@ jobs:
       run: |
         # Create archive of the pre-built Qt binaries
         7z a qt5_5152_static_32.zip ..\Qt5_binaries
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v2
       with:
         name: qt5_5152_static_32.zip
         path: qt5_5152_static_32.zip
