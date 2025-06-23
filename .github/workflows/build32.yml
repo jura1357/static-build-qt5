@@ -9,11 +9,11 @@ jobs:
     steps:
     - name: Clone repository
       uses: actions/checkout@v2
-    - name: Install Python 3.7 version
+    - name: Install Python 3.9 version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.7'
-        architecture: 'x64'
+        python-version: '3.9'
+        architecture: 'x86'
     - name: Install jom
       run: |
         Invoke-WebRequest https://www.dropbox.com/s/gbf8sdx8wqxcrnd/jom.zip?dl=1 -OutFile .\jom.zip
